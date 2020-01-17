@@ -9,7 +9,7 @@ OBJ = $(SRC:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 CFLAGS = -Wall -qopenmp #-fopenmp
 CXX = icpc
 INCLUDES = -Iinclude
-LIBS = -lGL -lglut #-lm
+LIBS = -lGL -lGLU -lglut -lGLEW  #-lm
 
 .PHONY: all clean
 
